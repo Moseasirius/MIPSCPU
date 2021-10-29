@@ -1,0 +1,770 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 26 09:35:27 2021
+# Process ID: 352
+# Current directory: E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.runs/synth_2
+# Command line: vivado.exe -log SingleCycleCPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SingleCycleCPU.tcl
+# Log file: E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.runs/synth_2/SingleCycleCPU.vds
+# Journal file: E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source SingleCycleCPU.tcl -notrace
+Command: synth_design -top SingleCycleCPU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13572 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 470.027 ; gain = 168.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SingleCycleCPU' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (1#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-7023] instance 'ControlUnit' of module 'ControlUnit' has 16 connections declared, but only 15 given [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:61]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'E:/ComputerLogicDesign/MIPS/SingleCycleCPU/test_instructions.txt'; please make sure the file is added to project and has read permission, ignoring [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:33]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-3848] Net ROM in module/entity InstructionMemory does not have driver. [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/RegisterFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (4#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/RegisterFile.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'WriteReg' does not match port width (5) of module 'RegisterFile' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:78]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMemory.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'RAM_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "RAM_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (6#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateExtend' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ImmediateExtend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateExtend' (7#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ImmediateExtend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4_32bitsPC' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux4_32bitsPC.v:23]
+INFO: [Synth 8-226] default block is never used [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux4_32bitsPC.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4_32bitsPC' (8#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux4_32bitsPC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2_5bits' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux2_5bits.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2_5bits' (9#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux2_5bits.v:2]
+WARNING: [Synth 8-689] width (6) of port connection 'out' does not match port width (5) of module 'Mux2_5bits' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:109]
+INFO: [Synth 8-6157] synthesizing module 'Mux4_32bits' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux4_32bits.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4_32bits' (10#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux4_32bits.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Mux2_32bits' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux2_32bits.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2_32bits' (11#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Mux2_32bits.v:2]
+WARNING: [Synth 8-689] width (33) of port connection 'in1' does not match port width (32) of module 'Mux2_32bits' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'SingleCycleCPU' (12#1) [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:23]
+WARNING: [Synth 8-3331] design ControlUnit has unconnected port sign
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 534.520 ; gain = 232.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 534.520 ; gain = 232.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 534.520 ; gain = 232.672
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'PCWre_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'DBDataSrc_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWre_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'mRD_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'mWR_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 617.711 ; gain = 315.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	                8 Bit    Registers := 64    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 60    
+	   4 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 5     
+	  14 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 7     
+	  14 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 92    
+	   5 Input      1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SingleCycleCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 5     
+	  14 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 7     
+	  14 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 64    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 60    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 58    
+	   4 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 48    
+Module ImmediateExtend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Mux4_32bitsPC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Mux2_5bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module Mux4_32bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Mux2_32bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port DAddr[6]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[31]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[30]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[29]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[28]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[27]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[26]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[25]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[24]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[23]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[22]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[21]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[20]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[19]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[18]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[17]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[16]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[15]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[14]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[13]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[12]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[11]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[10]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[9]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[8]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port IAddr[7]
+WARNING: [Synth 8-3331] design ControlUnit has unconnected port sign
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ControlUnit/ALUSrcA_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/ALUSrcB_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/mWR_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/\ALUOp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ControlUnit/\ALUOp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/\ALUOp_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/\ALUOp_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ControlUnit/RegWre_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ControlUnit/\RegDst_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/\RegDst_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ControlUnit/PCWre_reg)
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[63][0]' (FDE_1) to 'DataMemory/RAM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[62][0]' (FDE_1) to 'DataMemory/RAM_reg[62][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[61][0]' (FDE_1) to 'DataMemory/RAM_reg[61][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[60][0]' (FDE_1) to 'DataMemory/RAM_reg[60][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[59][0]' (FDE_1) to 'DataMemory/RAM_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[58][0]' (FDE_1) to 'DataMemory/RAM_reg[58][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[57][0]' (FDE_1) to 'DataMemory/RAM_reg[57][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[56][0]' (FDE_1) to 'DataMemory/RAM_reg[56][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[55][0]' (FDE_1) to 'DataMemory/RAM_reg[55][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[54][0]' (FDE_1) to 'DataMemory/RAM_reg[54][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[53][0]' (FDE_1) to 'DataMemory/RAM_reg[53][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[52][0]' (FDE_1) to 'DataMemory/RAM_reg[52][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[51][0]' (FDE_1) to 'DataMemory/RAM_reg[51][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[50][0]' (FDE_1) to 'DataMemory/RAM_reg[50][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[49][0]' (FDE_1) to 'DataMemory/RAM_reg[49][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[48][0]' (FDE_1) to 'DataMemory/RAM_reg[48][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[47][0]' (FDE_1) to 'DataMemory/RAM_reg[47][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[46][0]' (FDE_1) to 'DataMemory/RAM_reg[46][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[45][0]' (FDE_1) to 'DataMemory/RAM_reg[45][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[44][0]' (FDE_1) to 'DataMemory/RAM_reg[44][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[43][0]' (FDE_1) to 'DataMemory/RAM_reg[43][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[42][0]' (FDE_1) to 'DataMemory/RAM_reg[42][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[41][0]' (FDE_1) to 'DataMemory/RAM_reg[41][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[40][0]' (FDE_1) to 'DataMemory/RAM_reg[40][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[39][0]' (FDE_1) to 'DataMemory/RAM_reg[39][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[38][0]' (FDE_1) to 'DataMemory/RAM_reg[38][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[37][0]' (FDE_1) to 'DataMemory/RAM_reg[37][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[36][0]' (FDE_1) to 'DataMemory/RAM_reg[36][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[35][0]' (FDE_1) to 'DataMemory/RAM_reg[35][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[34][0]' (FDE_1) to 'DataMemory/RAM_reg[34][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[33][0]' (FDE_1) to 'DataMemory/RAM_reg[33][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[32][0]' (FDE_1) to 'DataMemory/RAM_reg[32][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[31][0]' (FDE_1) to 'DataMemory/RAM_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[30][0]' (FDE_1) to 'DataMemory/RAM_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[29][0]' (FDE_1) to 'DataMemory/RAM_reg[29][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[28][0]' (FDE_1) to 'DataMemory/RAM_reg[28][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[27][0]' (FDE_1) to 'DataMemory/RAM_reg[27][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[26][0]' (FDE_1) to 'DataMemory/RAM_reg[26][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[25][0]' (FDE_1) to 'DataMemory/RAM_reg[25][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[24][0]' (FDE_1) to 'DataMemory/RAM_reg[24][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[23][0]' (FDE_1) to 'DataMemory/RAM_reg[23][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[22][0]' (FDE_1) to 'DataMemory/RAM_reg[22][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[21][0]' (FDE_1) to 'DataMemory/RAM_reg[21][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[20][0]' (FDE_1) to 'DataMemory/RAM_reg[20][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[19][0]' (FDE_1) to 'DataMemory/RAM_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[18][0]' (FDE_1) to 'DataMemory/RAM_reg[18][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[17][0]' (FDE_1) to 'DataMemory/RAM_reg[17][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[16][0]' (FDE_1) to 'DataMemory/RAM_reg[16][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[15][0]' (FDE_1) to 'DataMemory/RAM_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[14][0]' (FDE_1) to 'DataMemory/RAM_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[13][0]' (FDE_1) to 'DataMemory/RAM_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[12][0]' (FDE_1) to 'DataMemory/RAM_reg[12][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[11][0]' (FDE_1) to 'DataMemory/RAM_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[10][0]' (FDE_1) to 'DataMemory/RAM_reg[10][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[9][0]' (FDE_1) to 'DataMemory/RAM_reg[9][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[8][0]' (FDE_1) to 'DataMemory/RAM_reg[8][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[7][0]' (FDE_1) to 'DataMemory/RAM_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[6][0]' (FDE_1) to 'DataMemory/RAM_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[5][0]' (FDE_1) to 'DataMemory/RAM_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[4][0]' (FDE_1) to 'DataMemory/RAM_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[3][0]' (FDE_1) to 'DataMemory/RAM_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[2][0]' (FDE_1) to 'DataMemory/RAM_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[1][0]' (FDE_1) to 'DataMemory/RAM_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[0][0]' (FDE_1) to 'DataMemory/RAM_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[63][1]' (FDE_1) to 'DataMemory/RAM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[62][1]' (FDE_1) to 'DataMemory/RAM_reg[62][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[61][1]' (FDE_1) to 'DataMemory/RAM_reg[61][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[60][1]' (FDE_1) to 'DataMemory/RAM_reg[60][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[59][1]' (FDE_1) to 'DataMemory/RAM_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[58][1]' (FDE_1) to 'DataMemory/RAM_reg[58][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[57][1]' (FDE_1) to 'DataMemory/RAM_reg[57][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[56][1]' (FDE_1) to 'DataMemory/RAM_reg[56][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[55][1]' (FDE_1) to 'DataMemory/RAM_reg[55][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[54][1]' (FDE_1) to 'DataMemory/RAM_reg[54][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[53][1]' (FDE_1) to 'DataMemory/RAM_reg[53][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[52][1]' (FDE_1) to 'DataMemory/RAM_reg[52][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[51][1]' (FDE_1) to 'DataMemory/RAM_reg[51][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[50][1]' (FDE_1) to 'DataMemory/RAM_reg[50][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[49][1]' (FDE_1) to 'DataMemory/RAM_reg[49][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[48][1]' (FDE_1) to 'DataMemory/RAM_reg[48][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[47][1]' (FDE_1) to 'DataMemory/RAM_reg[47][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[46][1]' (FDE_1) to 'DataMemory/RAM_reg[46][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[45][1]' (FDE_1) to 'DataMemory/RAM_reg[45][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[44][1]' (FDE_1) to 'DataMemory/RAM_reg[44][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[43][1]' (FDE_1) to 'DataMemory/RAM_reg[43][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[42][1]' (FDE_1) to 'DataMemory/RAM_reg[42][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[41][1]' (FDE_1) to 'DataMemory/RAM_reg[41][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[40][1]' (FDE_1) to 'DataMemory/RAM_reg[40][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[39][1]' (FDE_1) to 'DataMemory/RAM_reg[39][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[38][1]' (FDE_1) to 'DataMemory/RAM_reg[38][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[37][1]' (FDE_1) to 'DataMemory/RAM_reg[37][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[36][1]' (FDE_1) to 'DataMemory/RAM_reg[36][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[35][1]' (FDE_1) to 'DataMemory/RAM_reg[35][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[34][1]' (FDE_1) to 'DataMemory/RAM_reg[34][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[33][1]' (FDE_1) to 'DataMemory/RAM_reg[33][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[32][1]' (FDE_1) to 'DataMemory/RAM_reg[32][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[31][1]' (FDE_1) to 'DataMemory/RAM_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[30][1]' (FDE_1) to 'DataMemory/RAM_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[29][1]' (FDE_1) to 'DataMemory/RAM_reg[29][7]'
+INFO: [Synth 8-3886] merging instance 'DataMemory/RAM_reg[28][1]' (FDE_1) to 'DataMemory/RAM_reg[28][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/mRD_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[63][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[62][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[61][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[60][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[59][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[58][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[57][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[56][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[55][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[54][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[53][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[52][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[51][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[50][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[49][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[48][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[47][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[46][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[45][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[44][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[43][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[42][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[41][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[40][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[39][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[38][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[37][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[36][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[35][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[34][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[33][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[32][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[31][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[29][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[28][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[26][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[23][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[21][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[20][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[15][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[13][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[10][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[9][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[7][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DataMemory/\RAM_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/\DBDataSrc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ControlUnit/\DBDataSrc_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RegisterFile/\file_reg[1][21] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (PCWre_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ALUSrcA_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ALUSrcB_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (DBDataSrc_reg[1]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (DBDataSrc_reg[0]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (RegWre_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (mRD_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (mWR_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ExtSel_reg) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (RegDst_reg[1]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (RegDst_reg[0]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (PCSrc_reg[1]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (PCSrc_reg[0]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg[3]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg[2]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg[1]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg[0]) is unused and will be removed from module ControlUnit.
+WARNING: [Synth 8-3332] Sequential element (result_reg[31]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[30]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[29]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[28]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[27]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[26]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[25]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[24]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[23]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[22]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[21]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[20]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[19]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[18]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[17]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[16]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[15]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[14]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[13]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[12]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[11]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[10]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[9]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[8]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[7]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[6]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[5]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[4]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[3]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[2]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[1]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result_reg[0]) is unused and will be removed from module ALU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 686.238 ; gain = 384.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 692.129 ; gain = 390.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 692.129 ; gain = 390.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     2|
+|4     |FDCE   |    31|
+|5     |IBUF   |     2|
+|6     |OBUF   |   202|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   246|
+|2     |  PC     |PC     |    41|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 215 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 692.152 ; gain = 390.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+240 Infos, 215 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 792.477 ; gain = 490.629
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.477 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/ComputerLogicDesign/MIPS/SingleCycleCPU/SingleCycleCPU.runs/synth_2/SingleCycleCPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SingleCycleCPU_utilization_synth.rpt -pb SingleCycleCPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 26 09:35:47 2021...

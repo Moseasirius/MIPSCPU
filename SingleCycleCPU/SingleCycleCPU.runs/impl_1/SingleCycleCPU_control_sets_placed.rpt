@@ -1,0 +1,176 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Oct 26 21:02:49 2021
+| Host         : MoZhenHai running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SingleCycleCPU_control_sets_placed.rpt
+| Design       : SingleCycleCPU
+| Device       : xc7k70t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    98 |
+|    Minimum number of control sets                        |    98 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    98 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    64 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              73 |           32 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             512 |          350 |
+| Yes          | No                    | Yes                    |            1023 |          447 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+--------------------------------+--------------------+------------------+----------------+
+|        Clock Signal       |          Enable Signal         |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++---------------------------+--------------------------------+--------------------+------------------+----------------+
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_30[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_28[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_42[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_45[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_34[0]              |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_27[0]              |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_35[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_36[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_4[0]               |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_3[0]               |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_39[0]              |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_8[0]               |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_24[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_44[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_6[0]               |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_31[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_26[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_33[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_32[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[2]_rep__1_1[0]  |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[2]_rep__1_0[0]  |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[3]_rep__1_2[0]  |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_6[0]  |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_7[0]  |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_10[0] |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_9[0]  |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_5[0]  |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_2[0]  |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_8[0]  |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_3[0]  |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[5]_rep__1_0[0]  |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[5]_rep__1_1[0]  |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[5]_rep__1_3[0]  |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[5]_rep__1_2[0]  |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/E[0]                       |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_18[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_2[0]               |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_1[0]               |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg[0]                 |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_10[0]              |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_14[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_16[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_17[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_19[0]              |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_20[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_21[0]              |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_0[0]               |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_22[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_23[0]              |                    |                4 |              8 |
+| ~clk_IBUF_BUFG            | ALU/result_reg[4]_rep__1_4[0]  |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_13[0]              |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_11[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_12[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_15[0]              |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_9[0]               |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_40[0]              |                    |                5 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_41[0]              |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_38[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_29[0]              |                    |                6 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_7[0]               |                    |                8 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_43[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_25[0]              |                    |                3 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_37[0]              |                    |                7 |              8 |
+| ~clk_IBUF_BUFG            | ALU/mWR_reg_5[0]               |                    |                6 |              8 |
+|  PC/currentIAddr_reg[6]_4 |                                |                    |                9 |             19 |
+|  clk_IBUF_BUFG            | ControlUnit/E[0]               | RegisterFile/Reset |               11 |             31 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_38[0]   | RegisterFile/Reset |                9 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_28[0]   | RegisterFile/Reset |                8 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_33[0]   | RegisterFile/Reset |               24 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_15[0]   | RegisterFile/Reset |               13 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_21[0]   | RegisterFile/Reset |               10 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_34[0]   | RegisterFile/Reset |               11 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_37[0]   | RegisterFile/Reset |               13 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_27[0]   | RegisterFile/Reset |               16 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_20[0]   | RegisterFile/Reset |               22 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_30[0]   | RegisterFile/Reset |               12 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_39[0]   | RegisterFile/Reset |               12 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_41[0]   | RegisterFile/Reset |               14 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_36[0]   | RegisterFile/Reset |               12 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_19[0]   | RegisterFile/Reset |               15 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_42[0]   | RegisterFile/Reset |               16 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_43[0]   | RegisterFile/Reset |               16 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_25[0]   | RegisterFile/Reset |               19 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_23[0]   | RegisterFile/Reset |                9 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_44[0]   | RegisterFile/Reset |               17 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_29[0]   | RegisterFile/Reset |                9 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_16[0]   | RegisterFile/Reset |               11 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_18[0]   | RegisterFile/Reset |               12 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_31[0]   | RegisterFile/Reset |               14 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_40[0]   | RegisterFile/Reset |               20 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_17[0]   | RegisterFile/Reset |               17 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_32[0]   | RegisterFile/Reset |               20 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_14[0]   | RegisterFile/Reset |               15 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_22[0]   | RegisterFile/Reset |               10 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_26[0]   | RegisterFile/Reset |               16 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_35[0]   | RegisterFile/Reset |               12 |             32 |
+| ~clk_IBUF_BUFG            | PC/currentIAddr_reg[6]_24[0]   | RegisterFile/Reset |               12 |             32 |
+|  n_0_1352_BUFG            |                                |                    |               23 |             54 |
++---------------------------+--------------------------------+--------------------+------------------+----------------+
+
+
